@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Messenger</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main-bg" id="main-bg-id">
+            <div class="contacts" id="contacts-id">
+                <div class="profile">
+                    <img class="avatar" src="img/user.png" alt="user">
+                    <div class="nickname">Dmitry Homyakov</div>
+                    <div class="id">#777</div>
+                    <img class="settings" src="img/settings.png" alt="settings">
+                </div>
+                <form name="searchForm" class="search" action="">
+                    <input class="search-contact" id="search-contact-id" name="searchText" type="text" placeholder="Поиск" onkeyup="searchContact(event)">
+                </form>
+                <div class="contacts-list">
+                    <ul class="list-users">
+                        <!-- <li class="item-user">
+                            <img class="avatar" src="/img/user.png" alt="user">
+                            <div class="nickname">Vasya Kashtanov</div>
+                            <div class="last-message">123123123123123123123123123123123</div>
+                            <div class="time">12.11.2022</div>
+                        </li>
+                        <li class="item-user">
+                            <img class="avatar" src="/img/user.png" alt="user">
+                            <div class="nickname">Danya Kashtanov</div>
+                            <div class="last-message">123123123123123123123123123123123</div>
+                            <div class="time">12.11.2022</div>
+                        </li>
+                        <li class="item-user">
+                            <img class="avatar" src="/img/user.png" alt="user">
+                            <div class="nickname">Maks Kashtanov</div>
+                            <div class="last-message">123123123123123123123123123123123</div>
+                            <div class="time">12.11.2022</div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="message" id="message-id">
+                <div class="text-bg" id="text-bg">
+                    <div class="text">Выберите, кому хотели бы написать</div>
+                </div>
+                <div class="message-bg" id="message-bg">
+                    <div class="info-menu" id="info-menu-id">
+                        <img class="back" id="back-id" src="img/back.png" alt="back" onclick="back_to_contacts()">
+                        <div class="nickname">Vasya Kashtanov</div>
+                        <div class="status">Online</div>
+                        <img class="search" src="img/search.png" alt="search">
+                        <img class="menu" src="img/menu.png" alt="menu">
+                    </div>
+                    <div class="message-list">
+                        <!-- <div class="message-receive">
+                            <img class="avatar-receive" src="img/user.png" alt="user">
+                            <div class="text-receive-bg">
+                                <div class="text-receive">Привет! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dicta debitis dignissimos, nemo nisi necessitatibus laboriosam aut illum voluptate quo suscipit a velit explicabo non amet, laudantium dolore magni sunt.</div>
+                                <div class="time-receive">18:43</div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="message-send">
+                            <div class="text-send-bg">
+                                <div class="text-send">Хай! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eum eveniet perspiciatis facere distinctio? Eos nobis odit maiores eum dolor at ipsam velit cupiditate possimus nisi. Sapiente dolore dolorum tempora?</div>
+                                <div class="time-send">18:52</div>
+                            </div>
+                            <img class="avatar-send" src="img/user.png" alt="user">
+                        </div> -->
+                    </div>
+                    <div class="send-menu" id="send-menu-id">
+                        <img class="attachment" src="img/attachment.png" alt="attachment">
+                        <input class="send-message" id="send-message-id" name="sendMessage" type="text" placeholder="Сообщение" onkeyup="sendMessage(event)">
+                        <img class="smile" src="img/smile.png" alt="smile">
+                        <img class="microphone" src="img/microphone.png" alt="microphone">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
