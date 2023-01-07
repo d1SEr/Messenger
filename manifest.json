@@ -1,9 +1,11 @@
 {
  "name": "Messenger",
  "description": "MyWebApp",
- "start_url": "/",
  "lang": "ru-RU",
  "display": "standalone",
+ "start_url": "https://d1ser.github.io/Messenger/index.html",
+ "theme_color": "#B12A34",
+ "background_color": "#B12A34",
  "icons": [
   {
    "src": "img/logo/android-icon-36x36.png",
