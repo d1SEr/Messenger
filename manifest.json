@@ -1,6 +1,7 @@
 {
  "name": "Messenger",
  "description": "MyWebApp",
+ "start_url": "/",
  "lang": "ru-RU",
  "display": "standalone",
  "icons": [
